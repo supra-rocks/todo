@@ -36,7 +36,7 @@ const useTodos = (
     if (!walletClient) return;
     setLoading(true);
     try {
-      const fetchedTodos = await loadTodos(
+      const fetchedTodos: any = await loadTodos(
         walletClient,
         contractAddress,
         moduleName,

@@ -55,7 +55,7 @@ export const loadTodos = async (
   const functionFullName = `${contractAddress}::${moduleName}::get_todo_list`;
   logDebug("Invoking view method for todo list", { functionFullName });
 
-  const response = (await walletClient.invokeViewMethod!(
+  const response: any = (await walletClient.invokeViewMethod!(
     functionFullName,
     [],
     [accountAddress, listIdx.toString()]

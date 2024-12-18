@@ -23,7 +23,7 @@ import AppFrame from "@/components/AppFrame";
 import LoadingScreen from "@/components/LoadingScreen";
 import useWallet from "@/hooks/useWallet";
 import useTodos from "@/hooks/useTodos";
-import { Todo } from "@/services/todoService";
+import { Todo } from "@/types/todo";
 
 const App: React.FC = () => {
   const MODULE_NAME = "advanced_todo_list";
